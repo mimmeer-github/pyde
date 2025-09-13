@@ -2,7 +2,7 @@ let mybutton = document.getElementById("button");
 let mc = null;
 
 async function loadMCData() {
-  let resp = await fetch("../static/data/microcontrollers.json");
+  let resp = await fetch("static/data/microcontrollers.json");
   if (!resp.ok) throw new Error(`microcontrollers.json couldn't be fetched with HTTP error: ${resp.status}`);
   let data = resp.json();
   return data;
