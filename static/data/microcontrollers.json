@@ -1,0 +1,19 @@
+{
+  "baseUri": "https://micropython.org/resources/firmware/",
+  "microCont": [
+    {
+      "brand": "Raspberry Pi",
+      "product": "Pico 2W",
+      "firmtype": "UF2",
+      "usb_id_flash": {
+        "pid": 0x000f,
+        "vid": 0x2e8a
+      },
+      "usb_id_norm": {
+        "pid": 0x0005,
+        "vid": 0x2e8a
+      },
+      "flash_img": "RPI_PICO2_W-20250911-v1.26.1.uf2"
+    }
+  ]
+}
