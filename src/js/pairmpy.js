@@ -1,5 +1,10 @@
 let mybutton = document.getElementById("button");
+let warn = document.getElementById("browserw");
 let mc = null;
+
+if (navigator.usb) {
+  warn.remove();
+}
 
 async function loadMCData() {
   let resp = await fetch("static/data/microcontrollers.json");
