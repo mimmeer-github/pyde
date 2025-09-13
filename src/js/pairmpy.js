@@ -19,6 +19,7 @@ async function getUsb() {
       "productId": mc.usb_id_flash.pid
     });
   });
+  console.log(options);
   try {
     let microCont = await navigator.usb.requestDevice(options);
     return microCont;
