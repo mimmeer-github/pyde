@@ -8,8 +8,6 @@ async function loadMCData() {
   return data;
 }
 
-let data = await loadMCData();
-
 async function getUsb() {
   let mcs = data.microCont
   let options = {
