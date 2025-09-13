@@ -4,12 +4,14 @@ let mc = null;
 async function loadMCData() {
   let resp = await fetch("static/data/microcontrollers.json");
   if (!resp.ok) throw new Error(`microcontrollers.json couldn't be fetched with HTTP error: ${resp.status}`);
-  let data = resp.json();
+  let data = await resp.json();
   return data;
 }
 
+let data = await loadMCData();
+
 async function getUsb() {
-  let mcs = (await loadMCData()).microCont
+  let mcs = data.microCont
   let options = {
     "filters": []
   }
